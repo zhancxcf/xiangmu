@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import url("commitLeft.css");
+#m-left .active a{
+	background: #f88f1f;
+	color: #fff;
+	border-left: 1px solid #f88f1f;
+	border-right: 1px solid #f88f1f;
+}
+#m-right{
+	float: right;
+	width:1005px;
+	.onebase-p{
+		width: 100%;
+		height: 47px;
+		line-height:47px;
+		border-bottom: 1px solid #e6e6e6;
+		a{
+			display: inline-block;
+			height: 45px;
+			line-height: 45px;
+			width: 100px;
+			text-align: center;
+			color: #4c4c4c;
+			font-size: 18px;
+			border: 1px solid #e6e6e6;
+			border-bottom: none;
+		}
+	}
+}
+.help-div{
+	border:1px solid #e6e6e6;
+	margin-top: 20px;
+	padding-left: 15px;
+	padding-top: 10px;
+
+	.help-left{
+		float: left;
+		h3{
+			font-size: 16px;
+			color: #808080;
+			padding-bottom: 25px;
+		}
+		dl{
+			background: url("../img/all-icon.png") -3px -413px no-repeat;
+			padding-left: 20px;
+			padding-bottom: 45px;
+			dt{
+				color: #1a1a1a;
+				font-size: 16px;		
+			}
+			dd{
+				color: #808080;
+				font-size: 14px;
+
+			}
+		}
+	}
+	.help-right{
+		float: right;
+		padding-right: 240px;
+		text-align: center;
+		img{
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		p{
+			padding-bottom: 28px;
+		}
+		.p1{
+			color: #808080;
+			font-size: 16px;
+		}
+		.p2{
+			color: #808080;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.p3{
+			a{
+				display: inline-block;
+				color: #fff;
+				font-size: 14px;
+				background: #26c08a;
+				width: 120px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				border-radius: 4px;
+				&:before{
+					display: inline-block;
+					vertical-align: middle;
+					content: "";
+					width: 23px;
+				    height: 22px;
+				    margin-right: 12px;
+				    background: url("../img/all-icon.png") 0 -477px no-repeat;
+
+				}
+			}
+		}
+
+	}
+}

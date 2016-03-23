@@ -1,0 +1,43 @@
+@import url("commonLink.css");
+@charset "utf-8";
+#m-right {
+  width: 1005px;
+  float: right;
+  border: 1px solid #e6e6e6;
+}
+#m-right .title-wrap {
+  padding: 36px 88px 0px;
+  text-align: center;
+}
+#m-right .title-wrap .title1 {
+  color: #aa988e;
+  font-size: 16px;
+}
+#m-right .title-wrap .title2 {
+  color: #f18555;
+  font-weight: bold;
+  font-size: 16px;
+}
+#m-right .title-wrap span {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #e6e6e6;
+}
+#m-right .main-wrap .inform {
+  margin: 110px auto 310px;
+  text-align: center;
+}
+#m-right .main-wrap .inform .p1 {
+  font-size: 30px;
+  color: #ffa130;
+  margin-top: 10px;
+}
+#m-right .main-wrap .inform .p2 {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+#m-right .main-wrap .inform .p3 {
+  font-size: 24px;
+  color: #f88f1f;
+}

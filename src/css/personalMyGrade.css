@@ -1,0 +1,90 @@
+@import url("commitLeft.css");
+@charset "utf-8";
+#m-left .active a {
+  background: #f88f1f;
+  color: #fff;
+  border-left: 1px solid #f88f1f;
+  border-right: 1px solid #f88f1f;
+}
+#m-right {
+  float: right;
+  width: 1005px;
+}
+#m-right .onebase-p {
+  width: 100%;
+  height: 47px;
+  border-bottom: 1px solid #e6e6e6;
+}
+#m-right .onebase-p a {
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  width: 100px;
+  text-align: center;
+  color: #4c4c4c;
+  font-size: 18px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+}
+#m-right ul {
+  padding-top: 20px;
+  padding-left: 25px;
+}
+#m-right ul li {
+  height: 35px;
+  line-height: 35px;
+  color: #737373;
+  font-size: 14px;
+}
+#m-right .form-p2 {
+  margin-top: 18px;
+  margin-bottom: 30px;
+  padding-left: 25px;
+}
+#m-right .form-p2 a {
+  text-align: center;
+  display: inline-block;
+  width: 9%;
+  font-size: 14px;
+  background: #26c08a;
+  color: #fff;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 4px;
+}
+#m-right table {
+  padding-left: 25px;
+  width: 580px;
+}
+#m-right table tr {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+#m-right table tr td {
+  color: #333333;
+  font-size: 13px;
+}
+#m-right table .th2,
+#m-right table .th3 {
+  width: 290px;
+}
+#m-right table .th2 em,
+#m-right table .th3 em {
+  display: inline-block;
+  width: 78px;
+  background: url("../img/th-bg.png") left center no-repeat;
+}
+#m-right table .th2 span,
+#m-right table .th3 span {
+  display: inline-block;
+  font-size: 18px;
+  color: #808080;
+  padding: 0 8px;
+}
+#m-right table .th2 i,
+#m-right table .th3 i {
+  display: inline-block;
+  width: 78px;
+  background: url("../img/th-bg2.png") left center no-repeat;
+}

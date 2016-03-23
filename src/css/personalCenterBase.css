@@ -1,0 +1,111 @@
+@import url("commitLeft.css");
+@charset "utf-8";
+#m-left .active a {
+  background: #f88f1f;
+  color: #fff;
+  border-left: 1px solid #f88f1f;
+  border-right: 1px solid #f88f1f;
+}
+#m-right {
+  float: right;
+  width: 1005px;
+  border: 1px solid #e6e6e6;
+}
+#m-right .onebase-p {
+  width: 100%;
+  height: 47px;
+  border-bottom: 1px solid #e6e6e6;
+}
+#m-right .onebase-p a {
+  display: inline-block;
+  height: 45px;
+  line-height: 45px;
+  width: 100px;
+  text-align: center;
+  color: #4c4c4c;
+  font-size: 18px;
+  border: 1px solid #e6e6e6;
+}
+#m-right .oneself span {
+  display: inline-block;
+  color: #999999;
+  font-size: 14px;
+  width: 100px;
+  text-align: center;
+}
+#m-right .oneself input {
+  width: 276px;
+  height: 25px;
+  border: 1px solid #e6e6e6;
+  padding: 10px 10px;
+  font-size: 14px;
+}
+#m-right .oneself .oneself-li1 {
+  height: 180px;
+}
+#m-right .oneself .oneself-li1 span {
+  padding-top: 45px;
+}
+#m-right .oneself .oneself-li1 img {
+  padding-top: 45px;
+  display: inline-block;
+}
+#m-right .oneself .oneself-li2 p {
+  color: #737373;
+  font-size: 12px;
+  margin-left: 105px;
+  line-height: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+#m-right .oneself .oneself-li4 {
+  height: 130px;
+  line-height: 130px;
+  margin-bottom: 70px;
+}
+#m-right .oneself .oneself-li4 a {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  background: #f29525;
+  border-radius: 3px;
+  margin-left: 170px;
+}
+#m-right .onebase-ul {
+  border-top: 1px solid #e6e6e6;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 25px;
+}
+#m-right .onebase-ul li {
+  line-height: 50px;
+  height: 50px;
+}
+#m-right .onebase-ul li span {
+  text-align: left;
+  display: inline-block;
+  width: 10%;
+  color: #4c4c4c;
+  font-size: 14px;
+}
+#m-right .onebase-ul li i {
+  display: inline-block;
+  width: 43%;
+  color: #737373;
+  font-size: 12px;
+}
+#m-right .onebase-ul li a {
+  text-align: center;
+  display: inline-block;
+  width: 8%;
+  font-size: 14px;
+  background: #26c08a;
+  color: #fff;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 4px;
+}

@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import url("commonLink.css");				
+#m-right{
+	width: 1005px;
+	float: right;
+	border: 1px solid #e6e6e6;
+// 标题
+	.title-wrap{
+		padding: 36px 88px 0px; 
+		text-align: center;
+		.title1{
+			color: #aa988e;
+			font-size: 16px;
+		}
+		.title2{
+			color: #f18555;
+			font-weight: bold;
+			font-size: 16px;
+		}
+		span{
+			display: inline-block;
+			width: 100%;
+			border: 1px solid #e6e6e6;
+		}
+	}
+//主要内容	
+	.main-wrap{
+		padding: 26px 136px 100px;
+		position: relative;
+		overflow: hidden;
+		.div-block{
+			position: relative;
+			width: 100%;
+			margin-bottom: 50px;
+			span{
+				&:after{
+					content: "";
+					width: 20px;
+			   		height: 20px;
+					background: url("../img/all-icon.png") no-repeat;
+				    background-position: 0px -666px;
+				    position: absolute;
+				    top: 56px;
+				    left: 357px;
+					}
+			}
+			.left{
+				float: left;
+				padding-right: 40px;
+				padding-left: 36px;
+			}
+			.right{
+				position: absolute;
+				left: 404px;
+				top: 52px;
+				width: 300px;
+				float: right;
+				h3{
+					font-size: 30px;
+					color: #ffad4a;
+				}
+				p{
+					font-size: 14px;
+					color: #333333;
+				}
+			}
+		}
+	// 让偶数行的位置互换
+		.div-block:nth-child(2n) {
+			.right{
+				float: left;
+				position: absolute;
+				left: 26px;
+				top: 52px;
+				width: 300px;
+				text-align: right;
+			}
+			.left{
+				float: right;
+			}
+		}
+		&:before{
+			content: '';
+		    position: absolute;
+		    top: 26px;
+		    left: 500px;
+		    height: 94%;
+		    width: 3px;
+		    background: #c5bcb7;
+		}
+	}
+}
