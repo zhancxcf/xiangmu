@@ -1,0 +1,107 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	font-family: "microsoft yahei";
+}
+.swiper-container {
+	/*  width: 320px;
+    height: 480px;*/
+	
+	width: 100%;
+	height: 100%;
+	background: #000;
+}
+.swiper-slide {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide1{
+	background: url(../img/bg1.jpg) no-repeat left top;
+	background-size: 100% 100%;
+}
+.swiper-slide2{
+	background: url(../img/bg2.jpg) no-repeat left top;
+	background-size: 100% 100%;
+}
+.swiper-slide3{
+	background-color: #fff;
+}
+.swiper-slide4{
+	background: url(../img/bg3.jpg) no-repeat left top;
+	background-size: 100% 100%;
+}
+.swiper-slide5{
+	background: url(../img/bg5.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+.logo{
+	left: 312px;
+	top: 34px;
+	background-image: url(../img/logo-1.1.png);
+	background-size: 100% 100%;
+}
+.swiper-pagination-bullet {
+	width: 6px;
+	height: 6px;
+	background: #fff;
+	opacity: .4;
+}
+.swiper-pagination-bullet-active {
+	opacity: 1;
+}
+.ani {
+	position: absolute;
+}
+.txt {
+	position: absolute;
+}
+#car {
+			animation: carMover 1.5s linear 1;
+		}
+		@-webkit-keyframes carMover {
+			from {
+				left: -100%;
+			}
+			to {
+				left: 0%
+			}
+		}
+		#nextBtn {
+			position: fixed;
+			/*width:20%;*/
+			width:40px;
+			left:50%;
+			margin-left: -20px;
+			bottom: 16px;
+			z-index: 10;
+			animation: up 1s linear infinite;
+			-webkit-animation: up 1s linear infinite;
+		}
+		img {
+			width:100%;
+			display: block;
+		}
+
+		@keyframes up {
+	       0% {
+	           transform: translateY(0);
+	           opacity: 0
+	       }
+
+	       50% {
+	           transform: translateY(-20px);
+	           opacity: 1
+	       }
+
+	       100% {
+	           transform: translateY(-40px);
+	           opacity: 0
+	       }
+	   }
