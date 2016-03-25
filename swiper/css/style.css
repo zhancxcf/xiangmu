@@ -105,3 +105,19 @@ body {
 	           opacity: 0
 	       }
 	   }
+	   @-webkit-keyframes up {
+	       0% {
+	           -webkit-transform: translateY(0);
+	           opacity: 0
+	       }
+
+	       50% {
+	           -webkit-transform: translateY(-20px);
+	           opacity: 1
+	       }
+
+	       100% {
+	           -webkit-transform: translateY(-40px);
+	           opacity: 0
+	       }
+	   }
