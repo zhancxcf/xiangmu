@@ -4,9 +4,12 @@
   width: 1005px;
   float: right;
 }
+.m-line1 {
+  width: 100%;
+  overflow: hidden;
+}
 .m-left1 {
-  display: inline-block;
-  margin-right: 21px;
+  float: left;
   width: 642px;
   height: 125px;
   border: 2px solid #e6e6e6;
@@ -33,7 +36,7 @@
   font-size: 14px;
 }
 .m-right1 {
-  display: inline-block;
+  float: right;
   width: 260px;
   height: 115px;
   border: 2px solid #e6e6e6;
@@ -83,7 +86,7 @@
   padding-right: 22px;
 }
 .m-line2 {
-  width: 1000px;
+  width: 1001px;
   border: 2px solid #e6e6e6;
 }
 .m-line2 .p1 {
@@ -96,71 +99,74 @@
   font-size: 14px;
   padding-left: 15px;
 }
-.m-line2 .p2 {
+.m-line2 .table-list {
+  display: table-cell;
+  vertical-align: middle;
+}
+.m-line2 .table-list .table {
+  width: 1001px;
   padding: 10px 0;
 }
-.m-line2 .p2 .span1 {
-  display: inline-block;
-  width: 65%;
-  padding: 10px 10px 10px 20px;
-  border-right: 2px solid #e6e6e6;
+.m-line2 .table-list .table tr .img {
+  width: 100px;
+  padding: 0px 18px;
 }
-.m-line2 .p2 .span1 img {
-  display: inline-block;
-  padding-right: 20px;
+.m-line2 .table-list .table tr .text {
+  width: 198px;
+  font-size: 14px;
 }
-.m-line2 .p2 .span1 .b-text1 {
-  width: 28%;
-  display: inline-block;
-  padding-top: 37px;
-}
-.m-line2 .p2 .span1 i {
-  display: inline-block;
-  width: 25%;
-  height: 100px;
-  line-height: 100px;
+.m-line2 .table-list .table tr .two {
+  width: 190px;
   background: url("../img/c2.png") center no-repeat;
-  background-position: 68px 26px;
 }
-.m-line2 .p2 .span1 .b-text2 {
-  display: inline-block;
-  width: 11%;
-  margin-left: 20px;
+.m-line2 .table-list .table tr .money {
+  width: 88px;
+  text-align: center;
 }
-.m-line2 .p2 .span1 .b-text2 span {
+.m-line2 .table-list .table tr .money span {
+  display: block;
   color: #ed601b;
-  font-size: 16px;
+  font-size: 14px;
 }
-.m-line2 .p2 .span1 .b-text2 em {
+.m-line2 .table-list .table tr .money a {
+  display: block;
   color: #999999;
   font-size: 13px;
 }
-.m-line2 .p2 .span2 {
-  display: inline-block;
-  width: 13%;
-  padding: 46px 10px 50px 20px;
-  border-right: 2px solid #e6e6e6;
-}
-.m-line2 .p2 .span2 i {
-  display: inline-block;
-  width: 50%;
-  color: #666666;
-  margin-left: 25px;
-}
-.m-line2 .p2 .span3 {
-  display: inline-block;
-  width: 13%;
-}
-.m-line2 .p2 .span3 a {
-  display: inline-block;
-  color: #4c4c4c;
-  font-size: 13px;
-  width: 65%;
-  border: 2px solid #e6e6e6;
-  height: 25px;
-  margin-left: 30px;
+.m-line2 .table-list .table tr .wait {
   text-align: center;
+  width: 160px;
+  border-right: 2px solid #e6e6e6;
+  border-left: 2px solid #e6e6e6;
+}
+.m-line2 .table-list .table tr .wait span {
+  display: block;
+  color: #666666;
+  font-size: 14px;
+}
+.m-line2 .table-list .table tr .wait a {
+  display: block;
+  color: #666666;
+  font-size: 14px;
+}
+.m-line2 .table-list .table tr .play {
+  width: 160px;
+  text-align: center;
+}
+.m-line2 .table-list .table tr .play a {
+  display: inline-block;
+  color: #666666;
+  font-size: 14px;
+  width: 104px;
+  height: 35px;
+  line-height: 35px;
   background: #f5f5f5;
+  text-align: center;
+  border: 2px solid #e6e6e6;
+}
+.m-line2 .table-list .table tr .play a:hover {
+  background: #ffa130;
+  color: #fff;
 }
 .m-line3 {
   width: 1005px;
@@ -177,15 +183,21 @@
   border-top: 2px solid #e6e6e6;
   border-bottom: 2px solid #e6e6e6;
   text-align: center;
-  vertical-align: middle;
 }
 .m-line3 div .img {
   height: 220px;
+  width: 248px;
   line-height: 220px;
-}
-.m-line3 div img {
-  display: inline-block;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
+  *display: block;
+  *font-size: 192px;
+  /*约为高度的0.873，220*0.873 约为192px.是把外框高度当成行高了*/
+  *font-family: Arial;
+  /*防止非utf-8引起的hack失效问题，如gbk编码*/
+}
+.m-line3 div .img a img {
   vertical-align: middle;
 }
 .m-line3 div .ps1 a {
@@ -211,4 +223,8 @@
   padding: 5px 0;
   border: 2px solid #e6e6e6;
   color: #4c4c4c;
+}
+.m-line3 div .ps3 a:hover {
+  background: #ffa130;
+  color: #fff;
 }

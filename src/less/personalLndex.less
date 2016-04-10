@@ -4,9 +4,12 @@
 	width: 1005px;
 	float: right;
 }
+.m-line1{
+	width:100%;
+	overflow:hidden;
+}
 .m-left1{
-	display: inline-block;
-	margin-right: 21px;
+	float: left;
 	width: 642px;
 	height: 125px;
 	border: 2px solid #e6e6e6;
@@ -34,7 +37,7 @@
 }
 
 .m-right1{
-	display: inline-block;
+	float: right;
 	width: 260px;
 	height: 115px;
 	border:2px solid #e6e6e6;
@@ -84,7 +87,7 @@
 	}
 }
 .m-line2{
-	width: 1000px;
+	width: 1001px;
 	border: 2px solid #e6e6e6;
 	.p1{
 		height: 45px;
@@ -96,73 +99,76 @@
 			padding-left: 15px;
 		}
 	}
-	.p2{
-		padding:10px 0; 
-		.span1{
-			display: inline-block;
-			width: 65%;
-			padding: 10px 10px 10px 20px;
-			// border: 1px solid red;
-			border-right: 2px solid #e6e6e6; 
-			img{
-				display: inline-block;
-				padding-right: 20px;
-			}
-			.b-text1{
-				width: 28%;
-				display: inline-block;
-				padding-top:37px; 
-			}
-			i{
-				display: inline-block;
-				width: 25%;
-				height: 100px;
-			    line-height: 100px;
-			    background: url("../img/c2.png") center no-repeat;
-			    background-position: 68px 26px;
-			}
-			.b-text2{
-				display: inline-block;
-				width: 11%;
-				margin-left: 20px;
-				span{
-					color: #ed601b;
-					font-size: 16px;
+	.table-list{
+		display:table-cell;
+		vertical-align: middle;
+		.table{
+			// border:1px solid red;
+			width:1001px;
+			padding:10px 0;
+			tr{
+				.img{
+					width: 100px;
+					padding:0px 18px;
 				}
-				em{
-					color: #999999;
-					font-size: 13px;
-				}	
+				.text{
+					width: 198px;
+					font-size: 14px;
+				}
+				.two{
+					width: 190px;
+				    background: url("../img/c2.png") center no-repeat;
+				    // background-position: 68px 26px;
+				}
+				.money{
+					width: 88px;
+					text-align:center;
+					span{
+						display: block;
+						color: #ed601b;
+						font-size: 14px;
+					}
+					a{display: block;
+						color: #999999;
+						font-size: 13px;
+					}
+				}
+				.wait{
+					text-align:center;
+					width: 160px;
+					border-right: 2px solid #e6e6e6; 
+					border-left: 2px solid #e6e6e6; 
+					span{
+						display:block;
+						color: #666666;
+						font-size: 14px;
+					}
+					a{
+						display:block;
+						color: #666666;
+						font-size: 14px;
+					}
+				}
+				.play{
+					width: 160px;
+					text-align:center;
+					a{
+						display:inline-block;
+						color: #666666;
+						font-size: 14px;
+						width:104px;
+						height: 35px;
+						line-height:35px;
+						background:#f5f5f5;
+						text-align:center;
+						border: 2px solid #e6e6e6;
+					}
+					a:hover{
+						background:#ffa130;
+						color:#fff;
+					}
+				}
 			}
-		}
-		.span2{
-			display: inline-block;
-			width: 13%;
-			padding: 46px 10px 50px 20px;
-			border-right: 2px solid #e6e6e6; 
-			i{
-				display: inline-block;
-				width: 50%;
-				color: #666666;
-				margin-left: 25px;
-			}
-		}
-		.span3{
-			display: inline-block;
-			width: 13%;
-			a{
-				display: inline-block;
-				color: #4c4c4c;
-				font-size: 13px;
-				width: 65%;
-				border: 2px solid #e6e6e6;
-				height: 25px;
-				margin-left: 30px;
-				text-align: center;
-				background: #f5f5f5;
-				
-			}
-
 		}
 	}
 }
@@ -173,22 +179,30 @@
 		margin-left:2px;
 	}
 	div{
-		float:left;
+		float: left;
 		width: 248px;
 		height: 335px;
 		border-right:2px solid #e6e6e6;
 		border-top:2px solid #e6e6e6;
 		border-bottom:2px solid #e6e6e6;
 		text-align:center;
-		vertical-align:middle;
+		// vertical-align:middle;
 		.img{
 			height:220px;
+			width: 248px;
 			line-height:220px;
-		}
-		img{
-			display:inline-block;
-			text-align:center;
+			display:table-cell;
 			vertical-align:middle;
+			text-align:center;  
+			*display: block;
+			*font-size: 192px;/*约为高度的0.873，220*0.873 约为192px.是把外框高度当成行高了*/
+			*font-family:Arial;/*防止非utf-8引起的hack失效问题，如gbk编码*/
+			a{
+				img{
+					// padding:1px;
+					vertical-align:middle; 	
+				}
+			}
 		}
 		.ps1{
 			a{
@@ -218,7 +232,10 @@
 				border:2px solid #e6e6e6;
 				color:#4c4c4c;
 			}
+			a:hover{
+				background:#ffa130;
+				color:#fff;
+			}
 		}
-
 	}
 }
